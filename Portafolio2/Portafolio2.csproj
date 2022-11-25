@@ -171,9 +171,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
-    <Compile Include="Controllers\AspNetUsersController.cs" />
-    <Compile Include="Controllers\ExperienciasController.cs" />
-    <Compile Include="Controllers\HabilidadController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\TipoController.cs" />
@@ -191,6 +188,9 @@
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\AspNetUsers.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Datos.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Experiencia.cs">
@@ -215,6 +215,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Servicios.cs">
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Testimonio.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -406,21 +409,6 @@
     <Content Include="Views\Tipo\Details.cshtml" />
     <Content Include="Views\Tipo\Edit.cshtml" />
     <Content Include="Views\Tipo\Index.cshtml" />
-    <Content Include="Views\AspNetUsers\Create.cshtml" />
-    <Content Include="Views\AspNetUsers\Delete.cshtml" />
-    <Content Include="Views\AspNetUsers\Details.cshtml" />
-    <Content Include="Views\AspNetUsers\Edit.cshtml" />
-    <Content Include="Views\AspNetUsers\Index.cshtml" />
-    <Content Include="Views\Experiencias\Create.cshtml" />
-    <Content Include="Views\Experiencias\Delete.cshtml" />
-    <Content Include="Views\Experiencias\Details.cshtml" />
-    <Content Include="Views\Experiencias\Edit.cshtml" />
-    <Content Include="Views\Experiencias\Index.cshtml" />
-    <Content Include="Views\Habilidad\Create.cshtml" />
-    <Content Include="Views\Habilidad\Delete.cshtml" />
-    <Content Include="Views\Habilidad\Details.cshtml" />
-    <Content Include="Views\Habilidad\Edit.cshtml" />
-    <Content Include="Views\Habilidad\Index.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

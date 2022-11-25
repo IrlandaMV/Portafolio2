@@ -20,6 +20,10 @@
         <AssociationConnector Association="portafolioModel.FK_Testimonio_AspNetUsers" ManuallyRouted="false" />
         <AssociationConnector Association="portafolioModel.FK_Experiencia_Tipo" ManuallyRouted="false" />
         <AssociationConnector Association="portafolioModel.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="portafolioModel.Datos" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="portafolioModel.Servicios" Width="1.5" PointX="5.25" PointY="19.625" />
+        <AssociationConnector Association="portafolioModel.FK_Datos_AspNetUsers" />
+        <AssociationConnector Association="portafolioModel.FK_Servicios_AspNetUsers" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
