@@ -29,11 +29,11 @@ namespace Portafolio2.Models
         public virtual DbSet<AspNetUserClaims> AspNetUserClaims { get; set; }
         public virtual DbSet<AspNetUserLogins> AspNetUserLogins { get; set; }
         public virtual DbSet<AspNetUsers> AspNetUsers { get; set; }
+        public virtual DbSet<Datos> Datos { get; set; }
         public virtual DbSet<Experiencia> Experiencia { get; set; }
         public virtual DbSet<Habilidad> Habilidad { get; set; }
+        public virtual DbSet<Servicios> Servicios { get; set; }
         public virtual DbSet<Testimonio> Testimonio { get; set; }
         public virtual DbSet<Tipo> Tipo { get; set; }
-        public virtual DbSet<Datos> Datos { get; set; }
-        public virtual DbSet<Servicios> Servicios { get; set; }
     }
 }

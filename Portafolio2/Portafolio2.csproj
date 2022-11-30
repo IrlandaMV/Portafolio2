@@ -171,8 +171,13 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AspNetUsersController.cs" />
+    <Compile Include="Controllers\DatoController.cs" />
+    <Compile Include="Controllers\ExperienciaController.cs" />
+    <Compile Include="Controllers\HabilidadController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ServiciosController.cs" />
     <Compile Include="Controllers\TipoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -321,13 +326,6 @@
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\Model.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Model.edmx.diagram">
-      <DependentUpon>Model.edmx</DependentUpon>
-    </Content>
     <Content Include="assets\vendor\bootstrap-icons\bootstrap-icons.json" />
     <Content Include="assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
     <Content Include="assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
@@ -359,6 +357,13 @@
     <Content Include="assets\vendor\boxicons\fonts\boxicons.woff2" />
     <Content Include="assets\vendor\swiper\swiper-bundle.min.js.map" />
     <Content Include="assets\vendor\typed.js\typed.min.js.map" />
+    <EntityDeploy Include="Models\Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -404,12 +409,37 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Servicios\Create.cshtml" />
+    <Content Include="Views\Servicios\Delete.cshtml" />
+    <Content Include="Views\Servicios\Details.cshtml" />
+    <Content Include="Views\Servicios\Edit.cshtml" />
+    <Content Include="Views\Servicios\Index.cshtml" />
+    <Content Include="Views\AspNetUsers\Create.cshtml" />
+    <Content Include="Views\AspNetUsers\Delete.cshtml" />
+    <Content Include="Views\AspNetUsers\Details.cshtml" />
+    <Content Include="Views\AspNetUsers\Edit.cshtml" />
+    <Content Include="Views\AspNetUsers\Index.cshtml" />
+    <Content Include="Views\Experiencia\Create.cshtml" />
+    <Content Include="Views\Experiencia\Delete.cshtml" />
+    <Content Include="Views\Experiencia\Details.cshtml" />
+    <Content Include="Views\Experiencia\Edit.cshtml" />
+    <Content Include="Views\Experiencia\Index.cshtml" />
+    <Content Include="Views\Habilidad\Create.cshtml" />
+    <Content Include="Views\Habilidad\Delete.cshtml" />
+    <Content Include="Views\Habilidad\Details.cshtml" />
+    <Content Include="Views\Habilidad\Edit.cshtml" />
+    <Content Include="Views\Habilidad\Index.cshtml" />
+    <Content Include="Views\Dato\Create.cshtml" />
+    <Content Include="Views\Dato\Delete.cshtml" />
+    <Content Include="Views\Dato\Details.cshtml" />
+    <Content Include="Views\Dato\Edit.cshtml" />
+    <Content Include="Views\Dato\Index.cshtml" />
     <Content Include="Views\Tipo\Create.cshtml" />
     <Content Include="Views\Tipo\Delete.cshtml" />
     <Content Include="Views\Tipo\Details.cshtml" />
     <Content Include="Views\Tipo\Edit.cshtml" />
     <Content Include="Views\Tipo\Index.cshtml" />
-    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
